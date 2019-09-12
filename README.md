@@ -140,7 +140,7 @@ Power: 5V/5A Powersupply (5Amps not needed, 2Amps should be enough)
 ### add script to autostart
 - `sudo nano /etc/rc.local`
 - add befor exit 0
-- `python3 /home/pi/Photobooth/photobooth.py &`
+- `sudo python3 /home/pi/Photobooth/photobooth.py &`
 - save and close the file
 
 ### make rasberry quiet boot
