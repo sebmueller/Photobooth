@@ -83,7 +83,7 @@ Power: 5V/5A Powersupply (5Amps not needed, 2Amps should be enough)
 - `sudo rpi-udpate` - uodate firmware of raspberry to newer version (at this moment, 4.19 is new released)
 - `sudo apt-get update`
 - `sudo apt-get upgrade`
-- `sudo apt-get install cups python3-dev python3-pip imagemagick python3-cups python3-picamera python3-rpi.gpio git`
+- `sudo apt-get install cups python3-dev python3-pip imagemagick python3-cups python3-picamera python3-rpi.gpio git install libusb-1.0 install libcups2-dev python3-usb python3-pil.imagetk`
 
 - if RPGPIO fails, try `sudo pip3 install RPi.GPIO`
 
@@ -91,8 +91,6 @@ Power: 5V/5A Powersupply (5Amps not needed, 2Amps should be enough)
 - `sudo pip3 install pyudev`
 - `sudo pip3 install psutil`
 - `sudo pip3 install transitions`
-- `sudo apt-get install python3-pil.imagetk`
-- `sudo apt-get install python3-usb`
 - `sudo pip3 install Wand`
 
 
@@ -100,9 +98,6 @@ Power: 5V/5A Powersupply (5Amps not needed, 2Amps should be enough)
 
 ### install newer Gutenprint Driver (V 5.3)
 - `https://www.raspberrypi.org/forums/viewtopic.php?t=219763`
-- Install some libraries:
- - `sudo apt-get install libcups2-dev`
- - `sudo apt-get install libusb-1.0`
 - Add new unstable Source
  - `sudo nano /etc/apt/sources.list`
 - Add the following lines:
