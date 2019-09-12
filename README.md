@@ -1,3 +1,9 @@
+# Used Raspian Image: Stretch @ 2019-04-08
+Link
+https://downloads.raspberrypi.org/raspbian/images/raspbian-2019-04-09/2019-04-08-raspbian-stretch.zip
+
+
+
 todo:
 https://blog.bigbinary.com/2018/09/12/configuring-memory-allocation-in-imagemagick.html
 
