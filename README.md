@@ -83,7 +83,7 @@ Power: 5V/5A Powersupply (5Amps not needed, 2Amps should be enough)
 - `sudo rpi-udpate` - uodate firmware of raspberry to newer version (at this moment, 4.19 is new released)
 - `sudo apt-get update`
 - `sudo apt-get upgrade`
-- `sudo apt-get install cups python3-dev python3-pip imagemagick python3-cups python3-picamera python3-rpi.gpio git install libusb-1.0 install libcups2-dev python3-usb python3-pil.imagetk`
+- `sudo apt-get install cups python3-dev python3-pip imagemagick python3-cups python3-picamera python3-rpi.gpio git libusb-1.0 libcups2-dev python3-usb python3-pil.imagetk`
 
 - if RPGPIO fails, try `sudo pip3 install RPi.GPIO`
 
