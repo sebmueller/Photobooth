@@ -501,8 +501,8 @@ class Photobooth:
         self.photo_h = int(self.config.get("Resolution", "photo_h", fallback="2464"))
         self.screen_w = int(self.config.get("Resolution", "screen_w", fallback="1024"))
         self.screen_h = int(self.config.get("Resolution", "screen_h", fallback="600"))
-	self.flip_screen_h = self.config.getboolean("Resolution", "flip_screen_h", fallback=False)
-	self.flip_screen_v = self.config.getboolean("Resolution", "flip_screen_v", fallback=False)
+        self.flip_screen_h = self.config.getboolean("Resolution", "flip_screen_h", fallback=False)
+        self.flip_screen_v = self.config.getboolean("Resolution", "flip_screen_v", fallback=False)
         self.screen_turnOnPrinter = os.path.join(self.screens_abs_file_path,
                                                  self.config.get("Screens", "screen_turn_on_printer",
                                                                  fallback="ScreenTurnOnPrinter.png"))
@@ -1016,7 +1016,7 @@ class Photobooth:
 
         self.camera.resolution = (self.photo_w, self.photo_h)
         self.camera.hflip = self.flip_screen_h
-	self.camera.vflip = self.flip_screen_v
+        self.camera.vflip = self.flip_screen_v
         self.startpreview()
 
         # load the Logo of the Photobooth and display it
