@@ -317,7 +317,7 @@ class Photobooth:
 
         self.camera.resolution = (self.photo_w, self.photo_h)
         self.camera.hflip = self.flip_screen_h
-		self.camera.vflip = self.flip_screen_v
+        self.camera.vflip = self.flip_screen_v
         self.startpreview()
 
         self.photonumber = 1
