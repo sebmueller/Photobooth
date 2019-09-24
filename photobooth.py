@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# import sys
+## import sys
 import os
 import pyudev
 import psutil
