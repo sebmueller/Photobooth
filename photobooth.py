@@ -480,7 +480,7 @@ class Photobooth:
         logging.debug("Read Config File")
         self.config = configparser.ConfigParser()
         self.config.sections()
-        self.config.read('config.ini')
+        self.config.read(os.path.join(REAL_PATH, 'config.ini'))
 
         if self.config.getboolean("Debug", "debug", fallback=True) == True:
             logging.basicConfig(level=logging.DEBUG)
@@ -1168,7 +1168,9 @@ class Photobooth:
     def CheckPrinter(self):
         logging.debug("CheckPrinter")
 
-        #return True
+        if self.printPicsEnable == False:
+            logging.debug("printing disabled")
+            return True
 
         busses = usb.busses()
         for bus in busses:
