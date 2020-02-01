@@ -705,7 +705,7 @@ class Photobooth:
 
         # create screen
         screen.composite(self.layout[0].cardImage, 131, self.screen_h - 184)
-        screen.composite(self.layout[1].cardImage, 643, self.screen_h - 184)
+        screen.composite(self.layout[1].cardImage, self.screen_w - int(1868 / 8) - 131, self.screen_h - 184)
 
         # save screen to file for displaying
         screen.save(filename=self.screen_choose_layout)
